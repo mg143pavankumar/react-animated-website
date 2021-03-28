@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/react-animated-website/static/js/main.994304fc.chunk.js",
+    "main.js.map": "/react-animated-website/static/js/main.994304fc.chunk.js.map",
+    "runtime-main.js": "/react-animated-website/static/js/runtime-main.966d67c0.js",
+    "runtime-main.js.map": "/react-animated-website/static/js/runtime-main.966d67c0.js.map",
+    "static/js/2.d849a5f0.chunk.js": "/react-animated-website/static/js/2.d849a5f0.chunk.js",
+    "static/js/2.d849a5f0.chunk.js.map": "/react-animated-website/static/js/2.d849a5f0.chunk.js.map",
+    "index.html": "/react-animated-website/index.html",
+    "static/js/2.d849a5f0.chunk.js.LICENSE.txt": "/react-animated-website/static/js/2.d849a5f0.chunk.js.LICENSE.txt",
+    "static/media/house-1.87e56bd0.jpg": "/react-animated-website/static/media/house-1.87e56bd0.jpg",
+    "static/media/house-2.b8266d2a.jpg": "/react-animated-website/static/media/house-2.b8266d2a.jpg",
+    "static/media/house-3.ca344d14.jpg": "/react-animated-website/static/media/house-3.ca344d14.jpg",
+    "static/media/house-4.9f67aae1.jpg": "/react-animated-website/static/media/house-4.9f67aae1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.966d67c0.js",
+    "static/js/2.d849a5f0.chunk.js",
+    "static/js/main.994304fc.chunk.js"
+  ]
+}
