@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {Link} from 'react-router-dom';
 import styled , {css} from 'styled-components/macro';
 import { menuData } from '../../data/MenuData';
@@ -9,10 +9,12 @@ const Nav = styled.nav`
     width: 100%;
     height: 80px;
     display: flex;
+    background: ${({isScrolled}) => (isScrolled ? '#cd853f' : 'transparent')};
     justify-content: space-between;
     padding: 1rem 2rem;
     z-index: 100; 
     position: fixed;
+    transition: ${({isScrolled}) => ( isScrolled ? '.3s' : '' )};
 
     
 `;
@@ -44,7 +46,7 @@ const MenuBars = styled(FaBars)`
         position: absoulte;
         top: 0;
         right: 0;
-        transform: translate(-50%);
+        transform: translate(-50%,25%);
         color: #fff;
     }
 
@@ -77,8 +79,20 @@ const NavBtn = styled.div`
 
 
 const Navbar = ({toggle}) => {
+    const [isScroll, setIsScroll] = useState(false);
+
+    const isScrolled = () => {
+        if(window.scrollY >= 80){
+          setIsScroll(true);
+        }else{
+          setIsScroll(false);
+        }
+      }
+    
+      window.addEventListener('scroll', isScrolled);
+      
     return (
-        <Nav>
+        <Nav isScrolled = {isScroll}>
             <Logo to = "/">ELIXR</Logo>
             <MenuBars onClick = {toggle} />
             <NavMenu>
