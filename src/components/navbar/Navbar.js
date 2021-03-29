@@ -5,6 +5,7 @@ import { menuData } from '../../data/MenuData';
 import { Button } from '../Button';
 import {FaBars} from 'react-icons/fa';
 
+
 const Nav = styled.nav`
     width: 100%;
     height: 80px;
@@ -14,7 +15,7 @@ const Nav = styled.nav`
     padding: 1rem 2rem;
     z-index: 100; 
     position: fixed;
-    transition: ${({isScrolled}) => ( isScrolled ? '.3s' : '' )};
+    transition: ${({isScrolled}) => ( isScrolled ? '.5s ease-in-out' : '' )};
 
     
 `;
