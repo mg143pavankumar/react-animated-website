@@ -6,6 +6,8 @@ import { SlideerData } from './data/SliderData';
 import Dropdown from './components/Dropdown/Dropdown';
 import InforSection from './components/InforSection';
 import { InfoData, InfoDataTwo } from './data/InfoData';
+import Footer from './components/Footer';
+import { FooterContactData, FooterOfficeData } from './data/FooterData';
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
       <Hero slides ={SlideerData}/>
       <InforSection {...InfoData}/>
       <InforSection {...InfoDataTwo}/>
+
+      <Footer {...FooterOfficeData} {...FooterContactData}/>
     </div>
   );
 }

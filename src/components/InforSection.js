@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button } from './Button';
 
+// For animation on scroll
+import Fade from 'react-reveal/Fade';
+
 const Section = styled.section`
     width: 100%;
     height: 100%;
@@ -68,6 +71,7 @@ const InforSection = ({heading, paragraphOne, paragraphTwo, reverse, buttonLabel
     return (
         <Section>
             <Container>
+                <Fade left>
                 <ColumnLeft reverse = {reverse}>
                     <h1>{heading}</h1>
                     <p>{paragraphOne}</p>
@@ -75,10 +79,13 @@ const InforSection = ({heading, paragraphOne, paragraphTwo, reverse, buttonLabel
 
                     <Button to = "/homes" primary = 'true'>{buttonLabel} </Button>
                 </ColumnLeft>
+                </Fade>
 
+                <Fade right>
                 <ColumnRight reverse = {reverse}>
                     <img src = {image} alt = "home" />
                 </ColumnRight>
+                </Fade>
             </Container>
         </Section>
     )
